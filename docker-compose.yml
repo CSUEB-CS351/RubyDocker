@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  ruby:
+    container_name: cs351Ruby
+    build: .
+    image: ruby
+    tty: true
+    volumes:
+      - ./scripts/:/home/student/scripts
